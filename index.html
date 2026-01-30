@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Will You Be My Valentine?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Floating Hearts -->
+<div id="hearts-container"></div>
+
+<!-- Background Music -->
+<audio id="bgMusic" loop>
+  <source src="assets/lover.mp3" type="audio/mpeg">
+</audio>
+
+<div class="screen active" id="screen1">
+  <h1>Hey Panda 💖</h1>
+  <p>Scroll down 👇</p>
+  <p style="font-size: 14px; margin-top: 30px;">Press Space or ↓ Arrow to continue</p>
+</div>
+
+<div class="screen" id="screen2">
+  <h1>You are the most beautiful girl I know 💕</h1>
+  <p>Scroll again 👇</p>
+  <p style="font-size: 14px; margin-top: 30px;">Press Space or ↓ Arrow to continue</p>
+</div>
+
+<div class="screen" id="screen3">
+  <h1>I have a small task for you 😌</h1>
+  <p>Are you ready?</p>
+  <button onclick="startPuzzle()">Yes 💘</button>
+  <button onclick="nope()">No 😛</button>
+</div>
+
+<div class="screen" id="screen4">
+  <h1>Solve this little puzzle 🧩</h1>
+  <div id="puzzle"></div>
+</div>
+
+<div class="screen" id="screen5">
+  <h1>Yayyy 💃🩷</h1>
+  <h2>I am your ideal candidate for a Valentine 😌</h2>
+  <p>Will you be my Valentine?</p>
+  <button onclick="finalYes()">Yes 💖</button>
+  <button onclick="finalNo()">No 😒</button>
+  <div id="finalMessage"></div>
+  <canvas id="confetti"></canvas>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
