@@ -64,7 +64,7 @@ button:hover {
 .piece {
   width: 100px;
   height: 100px;
-  background-image: url("assets/puzzle.jpg");
+  background-image: url("puzzle.jpg");
   background-size: 300px 300px;
   cursor: grab;
   border-radius: 10px;
